@@ -1,0 +1,34 @@
+{
+    "React Component": {
+        "prefix": ["react"],
+        "body": [
+			"import React from 'react';\n",
+			"const ${1:Component} = (${2}) => {",
+			"\treturn (",
+			"\t\t<>${0}</>",
+			"\t)",
+			"}\n",
+			"export default ${1:Component};\n",
+        ],
+        "description": "Quick react component",
+	},
+	"Styled Components": {
+		"prefix": ["styled", "react-styled"],
+		"body": [
+			"import styled from 'styled-components';\n",
+			"export const ${1:Component} = styled.${2:div}`",
+			"\t${0}",
+			"`;\n"
+		],
+		"description": "Quick styled components page"
+	},
+	"Styled Element": {
+		"prefix": "styled-const",
+		"body": [
+			"export const ${1:Component} = styled.${2:div}`",
+			"\t${0}",
+			"`;\n"
+		],
+		"description": "Quick styled components const"
+	}
+}
